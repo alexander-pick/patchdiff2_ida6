@@ -268,7 +268,7 @@ size_t singleton_unserialize(char * buf, size_t blen, psig_t ** s, int version)
 			buffer_unserialize_string(buf, blen, &pos, &(*s)->name);
 		else
 		{
-			qsnprintf(tmp, sizeof(tmp), "sub_%u", (unsigned int)(*s)->startEA);
+			qsnprintf(tmp, sizeof(tmp), "sub_%lu", (unsigned long)(*s)->startEA);
 			sig_set_name((*s), tmp);
 		}
 	}

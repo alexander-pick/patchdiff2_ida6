@@ -91,8 +91,8 @@ static void idaapi desc_dlist(slist_t * sl,uint32 n,char * const *arrptr)
 		qsnprintf(arrptr[0], MAXSTR, "%u", sl->sigs[n-1]->mtype);
 		qsnprintf(arrptr[1], MAXSTR, "%s", sl->sigs[n-1]->name);
 		qsnprintf(arrptr[2], MAXSTR, "%s", sl->sigs[n-1]->msig->name);
-		qsnprintf(arrptr[3], MAXSTR, "%u", (unsigned int)sl->sigs[n-1]->startEA);
-		qsnprintf(arrptr[4], MAXSTR, "%u", (unsigned int)sl->sigs[n-1]->msig->startEA);
+		qsnprintf(arrptr[3], MAXSTR, "%lu", (unsigned long)sl->sigs[n-1]->startEA);
+		qsnprintf(arrptr[4], MAXSTR, "%lu", (unsigned long)sl->sigs[n-1]->msig->startEA);
 		qsnprintf(arrptr[5], MAXSTR, "%c", sl->sigs[n-1]->id_crc ? '+' : '-');
 		qsnprintf(arrptr[6], MAXSTR, "%lu", sl->sigs[n-1]->crc_hash);
 		qsnprintf(arrptr[7], MAXSTR, "%lu", sl->sigs[n-1]->msig->crc_hash);
