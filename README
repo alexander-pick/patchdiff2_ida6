@@ -1,0 +1,8 @@
+Patchdiff2 by Nicolas Pouvesle 2010 / Tenable Security 2007-2009
+Fixed and updated to work with IDA 6 on OSX by Alexander Pick
+
+This should compile easily with no warnings by simplay typing compie cmd (mm or m)
+Might even work on Windows, but this is untested.
+
+License is GPL v2
+
